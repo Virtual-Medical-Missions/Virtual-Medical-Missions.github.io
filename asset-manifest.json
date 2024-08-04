@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0e82c902.css",
+    "main.js": "/static/js/main.6d8468c4.js",
+    "static/js/453.5639ec37.chunk.js": "/static/js/453.5639ec37.chunk.js",
+    "static/media/image3.png": "/static/media/image3.c1657a78ac68603702dd.png",
+    "static/media/image4.png": "/static/media/image4.a3a171f92b15c4cd1f2a.png",
+    "static/media/image5_1.png": "/static/media/image5_1.cbdaaba456e0270a7c23.png",
+    "static/media/backdrop_1.jpg": "/static/media/backdrop_1.01a198a4614e07ea8541.jpg",
+    "static/media/image10.png": "/static/media/image10.cf099c961c6da07bc8c2.png",
+    "static/media/image8.jpg": "/static/media/image8.ed60fb1ad6dda361ae10.jpg",
+    "static/media/logo_woBg_white.png": "/static/media/logo_woBg_white.907eab8a7a22726a1f59.png",
+    "static/media/image2.jpg": "/static/media/image2.e7ac869422091fa456aa.jpg",
+    "static/media/logo_tr.png": "/static/media/logo_tr.0766d22e33e094a6f45d.png",
+    "index.html": "/index.html",
+    "main.0e82c902.css.map": "/static/css/main.0e82c902.css.map",
+    "main.6d8468c4.js.map": "/static/js/main.6d8468c4.js.map",
+    "453.5639ec37.chunk.js.map": "/static/js/453.5639ec37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e82c902.css",
+    "static/js/main.6d8468c4.js"
+  ]
+}
