@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bs-theme-overrides.css" />
+  <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css" />
+  <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css" />
+  <link rel="shortcut icon" href="assets/img/logo_bg.png" type="image/x-icon" />
+
+  <style>
+    /* Global font family */
+    body {
+      font-family: 'Nunito', sans-serif;
+    }
+
+    /* Footer Styles */
+    #footerpad {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 40px 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    #footerpad .fa-stack {
+      font-size: 30px;
+      color: #3498db; /* Blue color for social icons */
+      transition: transform 0.25s ease-in-out;
+    }
+
+    #footerpad .fa-stack:hover {
+      color: #2980b9; /* Darker blue on hover */
+      transform: scale(1.05);
+    }
+
+    #footerpad .copyright {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    #footerpad p {
+      font-size: 14px;
+      margin: 5px 0;
+      color: white;
+    }
+
+    #footerpad a {
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    #footerpad a:hover {
+      color: #3498db; /* Blue on hover */
+    }
+
+    .footer-social {
+      margin-top: 20px;
+    }
+
+    /* Center social icons */
+    .footer-social .list-inline {
+      padding-left: 0;
+      list-style: none;
+      text-align: center;
+    }
+
+    .footer-social .list-inline-item {
+      margin-right: 15px;
+    }
+
+    /* Bottom "Created by" section */
+    .footer-creator {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #bdc3c7;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <br><br></br>
+  <section id="newsletter" class="container">
+    <h2 style="text-align: center;">Subscribe to our newsletter</h2>
+    <p style="text-align: center; width: 50%; margin: auto; padding: 8px;">
+      Our monthly send-out will update you on our work in Godo. We’ll share stories of patient recoveries and needs, inform you of what VMM is accomplishing, let you in on our future plans, and keep you in the loop of how your support is helping serve those in Kenya. Join the VMM mission and subscribe today!
+    </p>
+    <form
+      action="https://formkeep.com/f/412b9184195f"
+      method="POST"
+      style="text-align: center;"
+    >
+      <input type="text" name="first_name" placeholder="First Name" class="name-input" required>
+      <input type="text" name="last_name" placeholder="Last Name" class="name-input" required>
+      <input type="email" name="email" placeholder="Email Address" class="email-input" required>
+      <input type="submit" value="Subscribe" class="news-submit">
+    </form>
+  </section>
+
+  
+  <br><br></br>
+  <style>
+    .news-submit {
+      border-radius: 12px; /* Less round corners */
+      background-color: #ff1a1a;
+      color: black;
+      padding: 8px 15px; /* Adjust padding for more balanced button */
+      font-size: 16px;
+      border: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    /* Hover Effects */
+    .news-submit:hover {
+      background-color: #ff1a1a !important;
+      color: #ffffff !important;
+      transform: scale(1.05) !important;
+      border: none !important;
+    }
+
+    .news-submit:focus {
+      outline: none !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+
+    .email-input {
+      border-radius: 12px;
+      border: 2px solid black;
+      padding: 8px 14px;
+      width: 340px;
+      text-align: left;
+    }
+
+    .name-input {
+      border-radius: 12px;
+      border: 2px solid black;
+      padding: 8px 14px;
+      width: 140px;
+      text-align: left;
+    }
+  </style>
+  <footer id="footerpad">
+    <div class="container">
+
+
+      <div class="row">
+        <div class="col-md-6 col-lg-8 mx-auto">
+          <div class="footer-social">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/vmmhealth/?igshid=ZWQyN2ExYTkwZQ==" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/company/virtual-medical-missions/about/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="copyright text-center">
+            Copyright ©2023-2025 Virtual Medical Missions
+          </p>
+          <p class="text-center">
+            <span>All Rights Reserved</span>
+          </p>
+          <p class="text-center">
+            <span>VMM is a registered 501(c)(3) nonprofit organization</span>
+          </p>
+          <p class="text-center">
+            <span>All donations in the United States are tax deductible.</span>
+          </p>
+          <a href="https://www.flaticon.com/free-icons/diagnostic" title="diagnostic icons" target="_blank" class="d-block text-center">Medical Tools icons created by Flat Icons - Flaticon</a>
+        </div>
+      </div>
+
+      <!-- Created by Section -->
+      <div class="footer-creator">
+        <p>Created by</p>
+        <a href="https://www.linkedin.com/in/brian-wang-professional", target="_blank">
+          <strong>Brian Wang</strong>
+        </a>
+        <br>
+
+        <a href="https://www.linkedin.com/in/ethan-tran-24713a266", target="_blank">
+          <strong>Ethan Tran</strong>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

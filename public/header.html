@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bs-theme-overrides.css" />
+  <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css" />
+  <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css" />
+  <link rel="shortcut icon" href="assets/img/logo_bg.png" type="image/x-icon" />
+  
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background: linear-gradient(#05445e, #05445e);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 1); /* Add shadow at the bottom */
+    }
+
+    .navbar {
+      padding: 100px 100px;
+      margin: 0;
+      height: auto;
+    }
+
+    .navbar-brand img {
+      width: 80px; /* Reduced logo size */
+      height: 80px; /* Adjusted logo height */
+      object-fit: contain;
+      display: block;
+      padding-right: 12px;
+    }
+
+    .navbar-nav {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+      font-size: 18px; /* Reduced font size of the nav items */
+      color: #ffffff;
+      margin-right: 15px;
+    }
+
+    .navbar-nav .nav-item a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 5px 15px;
+      display: block;
+      line-height: 1.4;
+    }
+
+    .navbar-nav .nav-item a:hover {
+      color: #f1c40f;
+    }
+
+    /* Donate Button */
+    .btn-donate {
+      border-radius: 12px;
+      background-color: #f1c40f;
+      color: black;
+      padding: 8px 15px;
+      font-size: 14px;
+      border: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .btn-donate:hover {
+      background-color: #f1c40f;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Hamburger Menu */
+    .navbar-toggler {
+      border-color: #ffffff;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #ffffff;
+      width: 30px;
+      height: 3px;
+      display: block;
+      position: relative;
+    }
+
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #ffffff;
+      position: absolute;
+      left: 0;
+    }
+
+    .navbar-toggler-icon::before {
+      top: -8px;
+    }
+
+    .navbar-toggler-icon::after {
+      bottom: -8px;
+    }
+
+    .collapse.navbar-collapse {
+      justify-content: flex-start;
+    }
+
+    .navbar-nav {
+      flex-direction: row;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      .navbar-nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .navbar-nav .nav-item {
+        margin-right: 0;
+      }
+
+      .navbar-collapse .navbar-nav {
+        display: flex;
+        justify-content: center;
+      }
+
+      .navbar-collapse .navbar-nav .nav-item:last-child {
+        margin-top: 10px;
+      }
+    }
+
+  </style>
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="assets/img/logo_tr.png" alt="Logo">
+        <h1 style="color: white; font-size:larger; margin-bottom: 0;">Virtual Medical Missions</h1>
+      </a>
+      <button class="navbar-toggler text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="emr.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faqs.html">FAQs</a>
+          </li>
+        </ul>
+        <!-- Added container for donate button -->
+        <div class="ms-md-1 d-flex justify-content-center">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=APSEPMV7BPV56" target="_blank" class="btn-donate">Donate</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS (for collapse functionality) -->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
