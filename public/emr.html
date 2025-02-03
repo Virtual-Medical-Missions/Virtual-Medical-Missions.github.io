@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta name="keywords" content="VMM Virtual Medical Missions nonprofit telemed telemedicine " />
+  <title>EMR - Virtual Medical Missions</title>
+  <meta name="description"
+    content="About Virtual Medical Missions, A non-profit medical organization focused on bringing telemedicine services to underprivileged areas" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&amp;display=swap" />
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bs-theme-overrides.css" />
+  <link rel="stylesheet" href="assets/css/accordion-faq-list.css" />
+  <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css" />
+  <link rel="stylesheet" href="assets/css/Footer-with-social-media-icons.css" />
+  <link rel="stylesheet" href="assets/css/Navbar-Right-Links-icons.css" />
+  <link rel="shortcut icon" href="assets/img/logo_bg.png" type="image/x-icon" />
+
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* Particles.js background */
+    #particles-js {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    /* Section and text enhancements */
+    h1,
+    h2 {
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    h2.text-uppercase {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .fw-bold {
+      font-weight: 600;
+    }
+
+    /* Section padding */
+    section {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    /* Footer Styles */
+    #footerpad {
+      background-color: #333;
+      color: #ddd;
+      padding: 40px 0;
+    }
+
+    .footer-social .fa-stack {
+      font-size: 28px;
+      color: #3498db;
+    }
+
+    .footer-social .fa-stack:hover {
+      color: #2980b9;
+    }
+
+    .footer-creator {
+      color: #bbb;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .footer-social .list-inline {
+      padding-left: 0;
+      list-style: none;
+      text-align: center;
+    }
+
+    .footer-social .list-inline-item {
+      margin-right: 15px;
+    }
+
+    /* Hover effects */
+    .list-inline-item a {
+      transition: transform 0.3s ease;
+    }
+
+    .list-inline-item a:hover {
+      transform: scale(1.1);
+    }
+
+    /* Video Container */
+    .video-container {
+      position: relative;
+      padding-top: 30%;
+      height: 200px;
+      max-width: 50%;
+      margin: 0 auto;
+      background: #000;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Image Container */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      max-width: 50%;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      background: #f4f4f4;
+      margin: 0 auto;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    /* New PDF Viewer Section */
+    #pdf-section {
+      margin-top: 50px;
+    }
+
+    .pdf-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 800px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .pdf-container canvas {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 15px;
+    }
+
+    .pdf-navigation {
+      position: absolute;
+      top: 10px;
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+    }
+
+    .pdf-navigation button {
+      border-radius: 12px;
+      background-color: #f1c40f;
+      color: black;
+      padding: 8px 15px;
+      font-size: 14px;
+      border: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+      transition: transform 0.4s ease-in-out;
+      cursor: pointer;
+    }
+
+    .pdf-navigation button:hover {
+      background-color: #f1c40f;
+      color: white;
+      transform: scale(1.05);
+    }
+  </style>
+
+  <link rel="shortcut icon" href="assets/img/logo_bg.png" type="image/x-icon" />
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="headerdiv"></div>
+
+  <!-- EMR and E-Visit Section -->
+  <section class="py-4 py-xl-5">
+    <div class="container" style="align-content: center;">
+      <!-- EMR Section -->
+      <div class="col-12 mb-4">
+        <h1 style="text-align: center">Emergency Soapnote System</h1>
+        <p style="text-align: center">
+          <em>
+            The Doctor Portal VMM app offers virtual healthcare access to underserved populations. This app allows
+            patients to schedule appointments and store medical records securely via an SQL database.
+          </em>
+        </p>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/rMvrTTnAAGk" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            class="position-absolute w-100 h-100" style="top: 0; left: 0;"></iframe>
+        </div>
+      </div>
+
+      <!-- E-Visit Section -->
+      <div class="col-12 mb-4">
+        <h1 style="text-align: center">E-Visit</h1>
+        <p style="text-align: center">
+          <em>
+            Conversely, the E-visit allows patients to view/edit their profile records on the EMR system, thus creating
+            a full-circle medical communication system between both doctors and patients.
+          </em>
+        </p>
+        <div class="image-container mt-3" style="background-color: #82b0ba;">
+          <img src="assets/img/newPhotos/1.png" alt="Placeholder" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- PDF Viewer Section -->
+  <section id="pdf-section" class="py-4 py-xl-5">
+    <div class="container">
+      <h1 class="text-center">VMM Newsletters</h1>
+      <div class="pdf-container" id="pdf-container">
+        <div class="pdf-navigation">
+          <button id="prev-page">Previous Page</button>
+          <button id="next-page">Next Page</button>
+        </div>
+        <canvas id="pdf-canvas"></canvas>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footerdiv"></div>
+  <script src="loadHeader.js"></script>
+
+  <script>
+    // PDF.js script to load and navigate the PDF
+    const url = 'media/NewsletterUpdate1.pdf';  // Path to your PDF file in the public folder
+    let currentPage = 1;
+    let pdfDoc = null;
+    let totalPages = 0;
+
+    // Function to render a page
+    function renderPage(pageNum) {
+      pdfDoc.getPage(pageNum).then(function (page) {
+        const canvas = document.getElementById('pdf-canvas');
+        const context = canvas.getContext('2d');
+        const viewport = page.getViewport({ scale: 1.5 });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        // Render PDF page into the canvas context
+        page.render({ canvasContext: context, viewport: viewport });
+      });
+    }
+
+    // Function to load PDF
+    pdfjsLib.getDocument(url).promise.then(function (pdf) {
+      pdfDoc = pdf;
+      totalPages = pdf.numPages;
+      renderPage(currentPage);
+    });
+
+    // Navigation buttons functionality
+    document.getElementById('prev-page').addEventListener('click', function () {
+      if (currentPage > 1) {
+        currentPage--;
+        renderPage(currentPage);
+      }
+    });
+
+    document.getElementById('next-page').addEventListener('click', function () {
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderPage(currentPage);
+      }
+    });
+  </script>
+
+</body>
+
+</html>

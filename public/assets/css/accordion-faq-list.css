@@ -1,0 +1,18 @@
+.accordion collapse {
+  border: 0;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: none;
+  color: #ff9800;
+  box-shadow: none;
+  border-bottom: none;
+}
+
+
+
